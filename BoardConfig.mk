@@ -29,7 +29,7 @@ TARGET_OTA_ASSERT_DEVICE := g5,h1,h830
 TARGET_KERNEL_CONFIG := lineageos_h830_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/msm8996
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 9.0.5
+TARGET_KERNEL_CLANG_VERSION := 9.0.4
 
 # inherit from the proprietary version
 -include vendor/lge/h830/BoardConfigVendor.mk
