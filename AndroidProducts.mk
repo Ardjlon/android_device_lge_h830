@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_h830.mk
+    $(LOCAL_DIR)/pixys_h830.mk

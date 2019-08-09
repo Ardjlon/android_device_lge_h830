@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Inherit from h830 device
 $(call inherit-product, device/lge/h830/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h830
-PRODUCT_NAME := lineage_h830
+PRODUCT_NAME := pixys_h830
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H830
 PRODUCT_MANUFACTURER := LGE
@@ -38,3 +38,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="h1_tmo_us-user 8.0.0 OPR1.170623.032 182251913485f release-keys"
 
 BUILD_FINGERPRINT := "lge/h1_tmo_us/h1:8.0.0/OPR1.170623.032/182251913485f:user/release-keys"
+
+TARGET_BOOT_ANIMATION_RES := 1080
+

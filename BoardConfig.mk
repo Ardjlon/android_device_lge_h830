@@ -20,10 +20,16 @@ DEVICE_PATH := device/lge/h830
 # inherit from common g5
 -include device/lge/g5-common/BoardConfigCommon.mk
 
+# inherit from kernel msm8996
+#-include kernel/lge/msm8996/
+
 TARGET_OTA_ASSERT_DEVICE := g5,h1,h830
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h830_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/msm8996
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := 9.0.5
 
 # inherit from the proprietary version
 -include vendor/lge/h830/BoardConfigVendor.mk
